@@ -3,7 +3,14 @@ import TodoForm from "./TodoForm";
 import React from "react";
 import TodoList from "./TodoList";
 
-const Panel = ({ todo, todoList, setTodo, setTodoList }) => {
+const Panel = ({
+  todo,
+  todoList,
+  setTodo,
+  setTodoList,
+  todoDescription,
+  setTodoDescription,
+}) => {
   return (
     <div className={styles.panel}>
       <TodoForm
@@ -11,6 +18,8 @@ const Panel = ({ todo, todoList, setTodo, setTodoList }) => {
         todoList={todoList}
         setTodo={setTodo}
         setTodoList={setTodoList}
+        todoDescription={todoDescription}
+        setTodoDescription={setTodoDescription}
       ></TodoForm>
       <TodoList todoList={todoList} setTodoList={setTodoList} />
     </div>

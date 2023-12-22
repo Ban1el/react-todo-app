@@ -6,6 +6,7 @@ import Panel from "./components/Panel";
 
 function App() {
   const [todo, setTodo] = useState("");
+  const [todoDescription, setTodoDescription] = useState("");
   const [todoList, setTodoList] = useState([]);
 
   return (
@@ -17,6 +18,8 @@ function App() {
           todoList={todoList}
           setTodo={setTodo}
           setTodoList={setTodoList}
+          todoDescription={todoDescription}
+          setTodoDescription={setTodoDescription}
         ></Panel>
       </div>
     </div>

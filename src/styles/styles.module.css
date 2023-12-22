@@ -37,3 +37,12 @@
   width: 300px;
   font-size: 15px;
 }
+
+/* To do panel */
+.todo_panel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(48, 48, 48);
+  margin-top: 20px;
+}
