@@ -3,7 +3,6 @@
 import { useState } from "react";
 import "./styles/app.css";
 import Panel from "./components/Panel";
-import TodoList from "./components/TodoList";
 
 function App() {
   const [todo, setTodo] = useState("");
@@ -11,13 +10,15 @@ function App() {
 
   return (
     <div className="App">
-      <Panel
-        todo={todo}
-        todoList={todoList}
-        setTodo={setTodo}
-        setTodoList={setTodoList}
-      />
-      <TodoList todoList={todoList} setTodoList={setTodoList} />
+      <div className="container">
+        <h1>My Todos</h1>
+        <Panel
+          todo={todo}
+          todoList={todoList}
+          setTodo={setTodo}
+          setTodoList={setTodoList}
+        ></Panel>
+      </div>
     </div>
   );
 }
