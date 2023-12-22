@@ -5,6 +5,7 @@ const TodoList = ({ todoList, setTodoList }) => {
     <div>
       {todoList.map((todoItem) => (
         <Todo
+          key={todoItem.id}
           todoItem={todoItem}
           todoList={todoList}
           setTodoList={setTodoList}

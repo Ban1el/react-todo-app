@@ -1,4 +1,5 @@
 import styles from "../styles/styles.module.css";
+import { nanoid } from "nanoid";
 
 const TodoForm = ({
   todo,
@@ -12,7 +13,7 @@ const TodoForm = ({
     event.preventDefault();
     setTodoList([
       ...todoList,
-      { title: todo, description: todoDescription, id: todoList.length },
+      { title: todo, description: todoDescription, id: nanoid() },
     ]);
   };
 
