@@ -44,5 +44,24 @@
   justify-content: space-between;
   flex-direction: row;
   background-color: rgb(48, 48, 48);
-  margin-top: 20px;
+  margin-top: 50px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.column_1 h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 182, 0);
+}
+
+.icon_button {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  color: rgb(0, 182, 0);
+}
+
+.column_2 {
+  display: flex;
 }
